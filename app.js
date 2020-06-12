@@ -24,7 +24,7 @@ function search(e) {
             res.forEach(function(ver) {
                 htmlTemplate += `
                 <div class="contenedor-banderas" >
-                <a onclick="buscar('${ver.name}')" href="vista.html" id="vista">
+                <a onclick="buscar('${ver.name}')" href="vista.html">
                 <div class="banderas">
                 <div class="img-bandera"><img loading="lazy" width="500" height="400" src="${ver.flag}" alt=""></div>
                 </div>
@@ -65,7 +65,7 @@ function regionSeleccionada(e) {
             res.forEach(function(ver) {
                 htmlTemplate += `
              <div class="contenedor-banderas" >
-                <a onclick="buscar('${ver.name}')" href="vista.html" id="vista">
+                <a onclick="buscar('${ver.name}')" href="vista.html">
                     <div class="banderas">
                     <div class="img-bandera"><img loading="lazy" width="500" height="400"  src="${ver.flag}" alt=""></div>
                     </div>
@@ -113,7 +113,7 @@ let htmlTemplate = "";
 respuesta.forEach(function(ver) {
     htmlTemplate += `
      <div class="contenedor-banderas" >
-        <a onclick="buscar('${ver.name}')" href="vista.html" id="vista">
+        <a onclick="buscar('${ver.name}')" href="vista.html">
             <div class="banderas">
             <div class="img-bandera"><img loading="lazy" width="500" height="400"  src="${ver.flag}" alt=""></div>
             </div>
