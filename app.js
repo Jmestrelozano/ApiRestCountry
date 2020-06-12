@@ -109,8 +109,12 @@ GuardarDatos()
 let guardado = localStorage.getItem("DatosCountryes");
 let respuesta = JSON.parse(guardado);
 
+
+let result = document.getElementById("result")
+
 let htmlTemplate = "";
 respuesta.forEach(function(ver) {
+
     htmlTemplate += `
      <div class="contenedor-banderas" >
         <a onclick="buscar('${ver.name}')" href="vista.html">
@@ -126,10 +130,19 @@ respuesta.forEach(function(ver) {
         </a>
     </div>
        `;
+
+
     let resultado = document.getElementById("resultado");
     resultado.appendChild = htmlTemplate;
     resultado.innerHTML = htmlTemplate;
 });
+const spinner = document.querySelector("#cargando img");
+spinner.style.display = "block";
+setTimeout(function() {
+    spinner.style.display = "none";
+    result.appendChild(htmlTemplate);
+}, 3000);
+
 
 ////////////////////////////////////////////////////////
 function btnEnviar() {

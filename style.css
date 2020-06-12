@@ -7,6 +7,12 @@
         font-family: 'Times New Roman', Times, serif;
     }
     
+    #cargando img {
+        display: block;
+        margin-left: 30rem;
+        margin-right: 30rem;
+    }
+    
     .contenedor {
         background: rgb(250, 250, 250);
         transition: ease-in-out .2s;
