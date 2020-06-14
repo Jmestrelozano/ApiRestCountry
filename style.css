@@ -231,3 +231,96 @@
     .dark-dropdown .dropdown-menu .dropdown-item:hover {
         background-color: #202C36;
     }
+    
+    @media only screen and (max-width: 1200px) {
+        .columna {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .img-bandera {
+            width: 100%;
+        }
+        .section-buscador {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 9rem;
+            justify-items: right;
+        }
+        .uk-margin {
+            margin-left: 0!important;
+        }
+        .uk-inline {
+            width: 24rem;
+        }
+        .dropdown {
+            margin-left: 0!important;
+            width: 10rem;
+        }
+        .boton {
+            left: 0!important;
+        }
+        .navbar {
+            justify-content: space-between!important;
+        }
+        #cargando img {
+            margin: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .columna {
+            display: flex;
+            flex-direction: column;
+        }
+        .section-buscador {
+            display: flex;
+            flex-direction: column;
+        }
+        .dropdown {
+            width: 100%;
+            margin-top: 1.5rem;
+            margin-left: 0;
+            height: 56px;
+            border-radius: 5px;
+        }
+        ul {
+            margin: 0!important;
+            padding-left: 0!important;
+        }
+        .boton {
+            left: 0!important;
+        }
+        .navbar {
+            padding-top: 2rem!important;
+        }
+        .navbar-brand {
+            margin: 0!important;
+            font-size: 1rem!important;
+            padding: 0!important;
+        }
+        i {
+            font-size: .9rem!important;
+        }
+        .uk-margin {
+            margin-left: 0!important;
+        }
+        .img-bandera {
+            width: 100%;
+        }
+        .texto-banderas {
+            text-align: center;
+        }
+        p {
+            margin-left: 0!important;
+        }
+        .titulo-banderas {
+            margin-left: 0;
+        }
+        #cargando img {
+            margin: 0;
+        }
+        #cargando {
+            display: flex;
+            justify-content: center;
+        }
+    }

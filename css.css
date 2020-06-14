@@ -194,3 +194,40 @@ span {
     color: #FFFFFF;
     border-radius: 2px;
 }
+
+@media only screen and (max-width: 1200px) {
+    .boton {
+        left: 0!important;
+    }
+    .dark-mode {
+        height: 48rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-texto {
+        padding-left: 0;
+    }
+    .boton {
+        left: 0!important;
+    }
+    .navbar {
+        padding-top: 2rem!important;
+    }
+    .navbar-brand {
+        margin: 0!important;
+        font-size: 1rem!important;
+        padding: 0!important;
+    }
+    .boton i {
+        margin-left: 2rem;
+        font-size: .9rem!important;
+    }
+    .dark-mode {
+        height: 70rem;
+    }
+}
